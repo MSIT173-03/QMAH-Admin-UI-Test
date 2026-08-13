@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-Hant" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a2930">
+  <title>總覽｜清明鑑定屋後台</title>
+  <link rel="icon" href="../shared/brand/qmah-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/tabler.min.css">
+  <link rel="stylesheet" href="../shared/css/qmah-shared.css">
+  <link rel="stylesheet" href="assets/css/qmah-tabler.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="navbar navbar-vertical navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="開啟側邊導覽">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand qmah-brand" href="index.html" aria-label="清明鑑定屋後台首頁">
+          <img class="qmah-logo-light" src="../shared/brand/qmah-logo.svg" alt="清明鑑定屋 QMAH"><img class="qmah-logo-dark" src="../shared/brand/qmah-logo-dark.svg" alt="清明鑑定屋 QMAH">
+        </a>
+        <div class="collapse navbar-collapse" id="sidebar-menu">
+          <ul class="navbar-nav pt-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path></svg></span>
+                <span class="nav-link-title">總覽</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="artifacts.html" data-qmah-system="catalog">
+                <span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M5 7l1 12h12l1-12M9 11h6M3 4h18v3H3z"></path></svg></span>
+                <span class="nav-link-title">圖鑑管理</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html" data-qmah-system="game">
+                <span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10l3 3-2 7H6l-2-7 3-3zM8 7l2-3h4l2 3M8 13h8M10 16h4"></path></svg></span>
+                <span class="nav-link-title">遊戲管理</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="social.html" data-qmah-system="social">
+                <span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v10H9l-4 4V5zM8 9h8M8 12h5"></path></svg></span>
+                <span class="nav-link-title">社群管理</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html" data-qmah-system="store">
+                <span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 11H6L5 8zM8 8a4 4 0 0 1 8 0M9 12h6"></path></svg></span>
+                <span class="nav-link-title">商城管理</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.html" data-qmah-system="user">
+                <span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1M9.5 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM17 11a3 3 0 0 0 0-6M17 15h1a3 3 0 0 1 3 3v2"></path></svg></span>
+                <span class="nav-link-title">會員管理</span>
+              </a>
+            </li>
+          </ul>
+          <div class="qmah-sidebar-footer mt-auto">
+            <strong>典藏工作台</strong>
+            <span>圖鑑條目 256 件</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <header class="navbar navbar-expand-md d-print-none qmah-topbar">
+      <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="開啟工具列">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <div class="navbar-nav flex-fill">
+            <div class="nav-item flex-fill">
+              <div class="input-icon">
+                <span class="input-icon-addon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></span>
+                <input class="form-control" type="search" placeholder="搜尋圖鑑、會員或訂單" aria-label="搜尋圖鑑、會員或訂單">
+              </div>
+            </div>
+          </div>
+          <div class="navbar-nav flex-row order-md-last ms-md-3 align-items-center">
+            <div class="nav-item me-2">
+              <button type="button" class="qmah-theme-toggle" data-qmah-theme-toggle aria-pressed="false" aria-label="切換為深色模式">
+                <svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg>
+                <span data-qmah-theme-label>深色</span>
+              </button>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link px-2" data-bs-toggle="dropdown" aria-label="開啟通知">
+                <svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"></path></svg>
+                <span class="badge bg-red text-red-fg badge-notification badge-pill">1</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <div class="dropdown-header">最近通知</div>
+                <a class="dropdown-item" href="artifacts.html">汝窯 青瓷盤來源標示 CC BY 4.0</a>
+                <a class="dropdown-item" href="artifacts.html">題庫已啟用 256 件</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-secondary" href="#">查看全部通知</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown ms-2">
+              <a href="#" class="nav-link d-flex align-items-center lh-1" data-bs-toggle="dropdown" aria-label="開啟帳號選單">
+                <span class="avatar avatar-sm" style="background:#e6eff3;color:#2d556b">林</span>
+                <div class="d-none d-xl-block ps-2"><div>林編輯</div><div class="mt-1 small text-secondary">內容編輯</div></div>
+                <svg class="qmah-icon ms-2" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <a class="dropdown-item" href="#">帳號設定</a>
+                <a class="dropdown-item" href="#">操作紀錄</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">登出</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-wrapper">
+      <div class="page-header d-print-none">
+        <div class="container-xl">
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="page-pretitle">清明鑑定屋 QMAH</div>
+              <h1 class="page-title">典藏總覽</h1>
+              <p class="mb-0 text-secondary">掌握待辦與典藏狀態。</p>
+            </div>
+            <div class="col-auto ms-auto d-print-none">
+              <div class="qmah-actions">
+                <a class="btn btn-outline-secondary" href="artifacts.html">查看文物</a>
+                <a class="btn btn-primary" href="artifact-form.html"><svg class="qmah-icon me-1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>新增圖鑑條目</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-body">
+        <div class="container-xl">
+          <div class="row row-cards mb-3">
+            <div class="col-sm-6 col-lg-3"><article class="card qmah-kpi qmah-kpi--warm"><div class="card-body"><p class="qmah-kpi__label">待處理檢舉</p><p class="qmah-kpi__value">1</p><p class="qmah-kpi__note">內容檢舉</p><div class="qmah-kpi__rule"></div></div></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="card qmah-kpi"><div class="card-body"><p class="qmah-kpi__label">進行中遊戲房</p><p class="qmah-kpi__value">2</p><p class="qmah-kpi__note">遊戲房間</p><div class="qmah-kpi__rule"></div></div></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="card qmah-kpi qmah-kpi--bronze"><div class="card-body"><p class="qmah-kpi__label">待付款訂單</p><p class="qmah-kpi__value">2</p><p class="qmah-kpi__note">商城訂單</p><div class="qmah-kpi__rule"></div></div></article></div>
+            <div class="col-sm-6 col-lg-3"><article class="card qmah-kpi qmah-kpi--info"><div class="card-body"><p class="qmah-kpi__label">未讀通知</p><p class="qmah-kpi__value">1</p><p class="qmah-kpi__note">系統通知</p><div class="qmah-kpi__rule"></div></div></article></div>
+          </div>
+
+          <div class="row row-cards mb-3">
+            <div class="col-lg-8">
+              <section class="card h-100" aria-labelledby="review-trend-title">
+                <div class="card-header">
+                  <div>
+                    <h2 class="card-title mb-1" id="review-trend-title">社群貼文狀態</h2>
+                    <p class="card-subtitle">共 49 篇貼文</p>
+                  </div>
+                  <div class="card-actions">
+                    <button type="button" class="btn btn-outline-secondary btn-sm">狀態分布 <svg class="qmah-icon ms-1" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="qmah-chart-wrap"><canvas data-qmah-chart aria-label="社群貼文公開、隱藏與已刪除的數量"></canvas></div>
+                  <div class="qmah-legend" aria-label="圖例"><span><i></i>公開 41</span><span class="qmah-legend__bronze"><i></i>隱藏 4</span><span class="qmah-legend__cinnabar"><i></i>已刪除 4</span></div>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-4">
+              <section class="card h-100" aria-labelledby="activity-title">
+                <div class="card-header"><h2 class="card-title mb-0" id="activity-title">營運提醒</h2></div>
+                <div class="card-body">
+                  <ul class="qmah-activity-list">
+                    <li class="qmah-activity-item"><span class="qmah-activity-item__mark">檢</span><div><p class="qmah-activity-item__title">待處理檢舉 1 件</p><span class="qmah-activity-item__time">社群內容</span></div></li>
+                    <li class="qmah-activity-item"><span class="qmah-activity-item__mark">玩</span><div><p class="qmah-activity-item__title">進行中遊戲房 2 間</p><span class="qmah-activity-item__time">遊戲管理</span></div></li>
+                    <li class="qmah-activity-item"><span class="qmah-activity-item__mark">單</span><div><p class="qmah-activity-item__title">待付款訂單 2 筆</p><span class="qmah-activity-item__time">商城管理</span></div></li>
+                    <li class="qmah-activity-item"><span class="qmah-activity-item__mark">知</span><div><p class="qmah-activity-item__title">未讀通知 1 則</p><span class="qmah-activity-item__time">系統通知</span></div></li>
+                  </ul>
+                </div>
+                <div class="card-footer"><a href="artifacts.html" class="link-secondary">查看圖鑑條目</a></div>
+              </section>
+            </div>
+          </div>
+
+          <section class="card" aria-labelledby="pending-title">
+            <div class="card-header">
+              <div>
+                <h2 class="card-title mb-1" id="pending-title">圖鑑條目</h2>
+                <p class="card-subtitle">共 256 件</p>
+              </div>
+              <div class="card-actions"><a href="artifacts.html" class="btn btn-outline-secondary btn-sm">全部文物</a></div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-vcenter table-hover mb-0">
+                <thead><tr><th>文物</th><th>原始年代</th><th>分類</th><th>尺寸</th><th>啟用</th><th class="w-1"></th></tr></thead>
+                <tbody>
+                  <tr><td><div class="d-flex align-items-center"><img class="qmah-artifact-thumb me-3" src="../shared/media/catalog/enamel/故琺000873N000000000/thumbnail.jpg" alt="銅胎畫琺瑯西洋母子圖鼻煙壺縮圖" loading="lazy"><div><span class="qmah-artifact-name">銅胎畫琺瑯西洋母子圖鼻煙壺</span><span class="qmah-artifact-meta">故琺000873N000000000</span></div></div></td><td>清 乾隆</td><td>琺瑯器</td><td>5.5 × 3.8 × 2.4 公分</td><td><span class="qmah-status qmah-status--success">啟用</span></td><td><a href="artifacts.html" class="btn btn-sm btn-outline-secondary">查看</a></td></tr>
+                  <tr><td><div class="d-flex align-items-center"><img class="qmah-artifact-thumb me-3" src="../shared/media/catalog/jade/故玉004347N000000000/thumbnail.jpg" alt="玉劍璏縮圖" loading="lazy"><div><span class="qmah-artifact-name">玉劍璏</span><span class="qmah-artifact-meta">故玉004347N000000000</span></div></div></td><td>西漢中期至東漢</td><td>玉器</td><td>8.4 × 2.7 × 1.1 公分</td><td><span class="qmah-status qmah-status--success">啟用</span></td><td><a href="artifacts.html" class="btn btn-sm btn-outline-secondary">查看</a></td></tr>
+                  <tr><td><div class="d-flex align-items-center"><img class="qmah-artifact-thumb me-3" src="../shared/media/catalog/ceramic/故瓷018182N000000000/thumbnail.jpg" alt="汝窯青瓷盤縮圖" loading="lazy"><div><span class="qmah-artifact-name">汝窯 青瓷盤</span><span class="qmah-artifact-meta">故瓷018182N000000000</span></div></div></td><td>北宋</td><td>陶瓷</td><td>高 3.2–3.7 公分</td><td><span class="qmah-status qmah-status--success">啟用</span></td><td><a href="artifacts.html" class="btn btn-sm btn-outline-secondary">查看</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="footer footer-transparent d-print-none"><div class="container-xl"><div class="row text-center"><div class="col-12">清明鑑定屋 QMAH · 內容管理後台</div></div></div></footer>
+    </div>
+  </div>
+  <script src="../shared/vendor/chart.umd.min.js"></script>
+  <script src="assets/vendor/tabler.min.js"></script>
+  <script src="../shared/js/qmah-demo.js"></script>
+</body>
+</html>

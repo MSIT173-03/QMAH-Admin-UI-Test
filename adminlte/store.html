@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-Hant" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#22343d">
+  <title>總覽｜清明鑑定屋後台</title>
+  <link rel="icon" href="../shared/brand/qmah-mark.svg" type="image/svg+xml">
+  <script>try { const t = localStorage.getItem("qmah-admin-theme"); if (t === "dark" || t === "light") document.documentElement.setAttribute("data-bs-theme", t); } catch (error) {}</script>
+  <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.8.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/vendor/adminlte.min.css">
+  <link rel="stylesheet" href="../shared/css/qmah-shared.css">
+  <link rel="stylesheet" href="assets/css/qmah-adminlte.css">
+</head>
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+  <div class="app-wrapper">
+    <nav class="app-header navbar navbar-expand bg-body">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" data-lte-toggle="sidebar" href="#" role="button" aria-label="切換側邊導覽"><i class="bi bi-list" aria-hidden="true"></i></a></li>
+          <li class="nav-item d-none d-md-block"><a class="nav-link" href="index.html"><i class="bi bi-grid-1x2 me-1" aria-hidden="true"></i>總覽</a></li>
+          <li class="nav-item d-none d-md-block"><a class="nav-link" href="artifacts.html"><i class="bi bi-archive me-1" aria-hidden="true"></i>圖鑑管理</a></li>
+        </ul>
+        <form class="d-none d-md-flex ms-3" role="search" onsubmit="return false"><div class="input-group input-group-sm"><label class="visually-hidden" for="adminlte-search">搜尋</label><input id="adminlte-search" class="form-control" type="search" placeholder="搜尋圖鑑、會員或訂單"><button class="btn btn-outline-secondary" type="submit" aria-label="搜尋"><i class="bi bi-search" aria-hidden="true"></i></button></div></form>
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><button class="nav-link qmah-theme-toggle" type="button" data-qmah-theme-toggle aria-pressed="false" aria-label="切換為深色模式"><i class="bi bi-sun" aria-hidden="true"></i><span class="d-none d-sm-inline ms-1" data-qmah-theme-label>深色</span></button></li>
+          <li class="nav-item dropdown"><a class="nav-link" data-bs-toggle="dropdown" href="#" aria-label="開啟通知"><i class="bi bi-bell" aria-hidden="true"></i><span class="navbar-badge badge text-bg-danger">1</span></a><div class="dropdown-menu dropdown-menu-lg dropdown-menu-end"><a href="artifacts.html" class="dropdown-item"><i class="bi bi-archive me-2" aria-hidden="true"></i>汝窯 青瓷盤來源標示</a><div class="dropdown-divider"></div><a href="artifacts.html" class="dropdown-item dropdown-footer">查看文物</a></div></li>
+          <li class="nav-item dropdown"><a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="dropdown" href="#" aria-label="開啟帳號選單"><span class="badge rounded-circle text-bg-light border p-2">林</span><span class="d-none d-lg-inline">林編輯</span><i class="bi bi-chevron-down" aria-hidden="true"></i></a><div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="#">帳號設定</a><a class="dropdown-item" href="#">操作紀錄</a><div class="dropdown-divider"></div><a class="dropdown-item" href="#">登出</a></div></li>
+        </ul>
+      </div>
+    </nav>
+
+    <aside class="app-sidebar" data-bs-theme="dark">
+      <div class="sidebar-brand"><a href="index.html" class="brand-link qmah-adminlte-brand" aria-label="清明鑑定屋後台首頁"><img class="qmah-logo-light" src="../shared/brand/qmah-logo.svg" alt="清明鑑定屋 QMAH"><img class="qmah-logo-dark" src="../shared/brand/qmah-logo-dark.svg" alt="清明鑑定屋 QMAH"></a></div>
+      <div class="sidebar-wrapper"><nav aria-label="主要導覽"><ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+        <li class="nav-item"><a href="index.html" class="nav-link active"><i class="nav-icon bi bi-grid-1x2" aria-hidden="true"></i><p>總覽</p></a></li>
+        <li class="nav-header">管理</li>
+        <li class="nav-item"><a href="artifacts.html" class="nav-link" data-qmah-system="catalog"><i class="nav-icon bi bi-archive" aria-hidden="true"></i><p>圖鑑管理</p></a></li>
+        <li class="nav-item"><a href="game.html" class="nav-link" data-qmah-system="game"><i class="nav-icon bi bi-controller" aria-hidden="true"></i><p>遊戲管理</p></a></li>
+        <li class="nav-item"><a href="social.html" class="nav-link" data-qmah-system="social"><i class="nav-icon bi bi-chat-square-text" aria-hidden="true"></i><p>社群管理</p></a></li>
+        <li class="nav-item"><a href="store.html" class="nav-link" data-qmah-system="store"><i class="nav-icon bi bi-bag" aria-hidden="true"></i><p>商城管理</p></a></li>
+        <li class="nav-item"><a href="users.html" class="nav-link" data-qmah-system="user"><i class="nav-icon bi bi-people" aria-hidden="true"></i><p>會員管理</p></a></li>
+      </ul></nav></div>
+    </aside>
+
+    <main class="app-main" id="main-content">
+      <div class="app-content-header"><div class="container-fluid"><div class="row"><div class="col-sm-6"><h1 class="mb-0">典藏總覽</h1></div><div class="col-sm-6"><ol class="breadcrumb float-sm-end mb-0"><li class="breadcrumb-item"><a href="index.html">清明鑑定屋</a></li><li class="breadcrumb-item active" aria-current="page">總覽</li></ol></div></div></div></div>
+      <div class="app-content"><div class="container-fluid">
+        <div class="qmah-adminlte-toolbar"><p>掌握待辦與典藏狀態。</p><div class="d-flex gap-2"><a class="btn btn-outline-secondary btn-sm" href="artifacts.html">查看文物</a><a class="btn btn-primary btn-sm" href="artifact-form.html">＋ 新增圖鑑條目</a></div></div>
+        <div class="row g-3 mb-3">
+          <div class="col-sm-6 col-xl-3"><div class="info-box qmah-adminlte-info mb-0"><span class="info-box-icon"><i class="bi bi-flag" aria-hidden="true"></i></span><div class="info-box-content"><span class="info-box-text">待處理檢舉</span><span class="info-box-number">1</span><span class="text-body-secondary small">內容檢舉</span></div></div></div>
+          <div class="col-sm-6 col-xl-3"><div class="info-box qmah-adminlte-info mb-0"><span class="info-box-icon"><i class="bi bi-controller" aria-hidden="true"></i></span><div class="info-box-content"><span class="info-box-text">進行中遊戲房</span><span class="info-box-number">2</span><span class="text-body-secondary small">遊戲房間</span></div></div></div>
+          <div class="col-sm-6 col-xl-3"><div class="info-box qmah-adminlte-info mb-0"><span class="info-box-icon"><i class="bi bi-bag" aria-hidden="true"></i></span><div class="info-box-content"><span class="info-box-text">待付款訂單</span><span class="info-box-number">2</span><span class="text-body-secondary small">商城訂單</span></div></div></div>
+          <div class="col-sm-6 col-xl-3"><div class="info-box qmah-adminlte-info mb-0"><span class="info-box-icon"><i class="bi bi-bell" aria-hidden="true"></i></span><div class="info-box-content"><span class="info-box-text">未讀通知</span><span class="info-box-number">1</span><span class="text-body-secondary small">系統通知</span></div></div></div>
+        </div>
+        <div class="row g-3 mb-3">
+          <div class="col-lg-8"><section class="card qmah-adminlte-card"><div class="card-header d-flex align-items-center justify-content-between"><div><h2 class="card-title mb-1">社群貼文狀態</h2><div class="text-body-secondary small">共 49 篇貼文</div></div><button type="button" class="btn btn-sm btn-outline-secondary">狀態分布</button></div><div class="card-body"><div class="qmah-adminlte-chart"><canvas data-qmah-chart aria-label="社群貼文公開、隱藏與已刪除的數量"></canvas></div><div class="qmah-legend mt-3" aria-label="圖例"><span><i></i>公開 41</span><span class="qmah-legend__bronze"><i></i>隱藏 4</span><span class="qmah-legend__cinnabar"><i></i>已刪除 4</span></div></div></section></div>
+          <div class="col-lg-4"><section class="card qmah-adminlte-card"><div class="card-header"><h2 class="card-title mb-0">營運提醒</h2></div><div class="card-body"><ul class="qmah-activity-list"><li class="qmah-activity-item"><span class="qmah-activity-item__mark">檢</span><div><p class="qmah-activity-item__title">待處理檢舉 1 件</p><span class="qmah-activity-item__time">社群內容</span></div></li><li class="qmah-activity-item"><span class="qmah-activity-item__mark">玩</span><div><p class="qmah-activity-item__title">進行中遊戲房 2 間</p><span class="qmah-activity-item__time">遊戲管理</span></div></li><li class="qmah-activity-item"><span class="qmah-activity-item__mark">單</span><div><p class="qmah-activity-item__title">待付款訂單 2 筆</p><span class="qmah-activity-item__time">商城管理</span></div></li></ul></div><div class="card-footer"><a href="artifacts.html">查看圖鑑條目</a></div></section></div>
+        </div>
+        <section class="card qmah-adminlte-card"><div class="card-header d-flex align-items-center justify-content-between"><div><h2 class="card-title mb-1">圖鑑條目</h2><div class="text-body-secondary small">共 256 件</div></div><a class="btn btn-sm btn-outline-secondary" href="artifacts.html">全部文物</a></div><div class="qmah-adminlte-table-wrap"><table class="table table-hover align-middle"><thead><tr><th>文物</th><th>原始年代</th><th>分類</th><th>尺寸</th><th>啟用</th><th></th></tr></thead><tbody><tr><td><div class="d-flex align-items-center"><img class="qmah-artifact-thumb me-3" src="../shared/media/catalog/enamel/故琺000873N000000000/thumbnail.jpg" alt="銅胎畫琺瑯西洋母子圖鼻煙壺縮圖"><div><span class="qmah-artifact-name">銅胎畫琺瑯西洋母子圖鼻煙壺</span><span class="qmah-artifact-meta">故琺000873N000000000</span></div></div></td><td>清 乾隆</td><td>琺瑯器</td><td>5.5 × 3.8 × 2.4 公分</td><td><span class="qmah-adminlte-status qmah-adminlte-status--success">啟用</span></td><td><a href="artifacts.html" class="btn btn-sm btn-outline-secondary">查看</a></td></tr><tr><td><div class="d-flex align-items-center"><img class="qmah-artifact-thumb me-3" src="../shared/media/catalog/jade/故玉004347N000000000/thumbnail.jpg" alt="玉劍璏縮圖"><div><span class="qmah-artifact-name">玉劍璏</span><span class="qmah-artifact-meta">故玉004347N000000000</span></div></div></td><td>西漢中期至東漢</td><td>玉器</td><td>8.4 × 2.7 × 1.1 公分</td><td><span class="qmah-adminlte-status qmah-adminlte-status--success">啟用</span></td><td><a href="artifacts.html" class="btn btn-sm btn-outline-secondary">查看</a></td></tr><tr><td><div class="d-flex align-items-center"><img class="qmah-artifact-thumb me-3" src="../shared/media/catalog/ceramic/故瓷018182N000000000/thumbnail.jpg" alt="汝窯青瓷盤縮圖"><div><span class="qmah-artifact-name">汝窯 青瓷盤</span><span class="qmah-artifact-meta">故瓷018182N000000000</span></div></div></td><td>北宋</td><td>陶瓷</td><td>高 3.2–3.7 公分</td><td><span class="qmah-adminlte-status qmah-adminlte-status--success">啟用</span></td><td><a href="artifacts.html" class="btn btn-sm btn-outline-secondary">查看</a></td></tr></tbody></table></div></section>
+        <div class="qmah-adminlte-footer">清明鑑定屋 QMAH · 內容管理後台</div>
+      </div></div>
+    </main>
+  </div>
+  <script src="../shared/vendor/chart.umd.min.js"></script>
+  <script src="assets/vendor/bootstrap-5.3.8.bundle.min.js"></script>
+  <script src="assets/vendor/adminlte.min.js"></script>
+  <script src="../shared/js/qmah-demo.js"></script>
+</body>
+</html>

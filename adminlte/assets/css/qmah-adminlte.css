@@ -1,0 +1,409 @@
+:root,
+[data-bs-theme="light"] {
+  --qmah-porcelain: #f6f8fa;
+  --qmah-surface: #ffffff;
+  --qmah-surface-soft: #eef4f7;
+  --qmah-surface-warm: #f6f1e9;
+  --qmah-ink: #22343d;
+  --qmah-ink-soft: #536871;
+  --qmah-ink-faint: #5f747d;
+  --qmah-line: #d8e2e8;
+  --qmah-line-soft: #eaf0f4;
+  --qmah-cobalt: #3f6f86;
+  --qmah-cobalt-deep: #2d556b;
+  --qmah-celadon: #b7cbd1;
+  --qmah-cinnabar: #ad594a;
+  --qmah-bronze: #8b7653;
+  --qmah-info: #356985;
+  --qmah-success: #2f765c;
+  --qmah-warning: #91611f;
+  --qmah-danger: #a94434;
+  --qmah-focus: rgba(63, 111, 134, 0.35);
+  --lte-sidebar-bg: #22343d;
+  --lte-sidebar-color: #c8d5da;
+  --lte-sidebar-hover-bg: #2d556b;
+  --lte-sidebar-hover-color: #ffffff;
+  --lte-sidebar-menu-active-bg: #3f6f86;
+  --lte-sidebar-menu-active-color: #ffffff;
+  --bs-primary: var(--qmah-cobalt);
+  --bs-primary-rgb: 63, 111, 134;
+  --bs-body-bg: var(--qmah-porcelain);
+  --bs-body-bg-rgb: 246, 248, 250;
+  --bs-body-color: var(--qmah-ink);
+  --bs-body-color-rgb: 34, 52, 61;
+  --bs-emphasis-color: var(--qmah-ink);
+  --bs-emphasis-color-rgb: 34, 52, 61;
+  --bs-secondary-color: var(--qmah-ink-soft);
+  --bs-secondary-color-rgb: 83, 104, 113;
+  --bs-secondary-bg: var(--qmah-surface-soft);
+  --bs-secondary-bg-rgb: 238, 244, 247;
+  --bs-tertiary-bg: var(--qmah-porcelain);
+  --bs-tertiary-bg-rgb: 246, 248, 250;
+  --bs-border-color: var(--qmah-line);
+  --bs-border-color-translucent: rgba(216, 226, 232, 0.72);
+  --bs-link-color: var(--qmah-cobalt-deep);
+  --bs-link-color-rgb: 45, 85, 107;
+  --bs-link-hover-color: #23495e;
+  --bs-link-hover-color-rgb: 35, 73, 94;
+  --bs-focus-ring-color: var(--qmah-focus);
+  color-scheme: light;
+}
+
+[data-bs-theme="dark"] {
+  --qmah-porcelain: #111a1f;
+  --qmah-surface: #192a31;
+  --qmah-surface-soft: #223a43;
+  --qmah-surface-warm: #2a2b27;
+  --qmah-ink: #eef4f6;
+  --qmah-ink-soft: #c2d2d8;
+  --qmah-ink-faint: #9fb6bf;
+  --qmah-line: #3c535d;
+  --qmah-line-soft: #2e444d;
+  --qmah-cobalt: #8ab8c8;
+  --qmah-cobalt-deep: #c0dce4;
+  --qmah-celadon: #c1d6da;
+  --qmah-cinnabar: #d67865;
+  --qmah-bronze: #d2bc80;
+  --qmah-info: #8fc2dc;
+  --qmah-success: #86caa4;
+  --qmah-warning: #e3c37b;
+  --qmah-danger: #e49788;
+  --qmah-focus: rgba(138, 184, 200, 0.45);
+  --lte-sidebar-bg: #0d1a20;
+  --lte-sidebar-color: #d0dfe3;
+  --lte-sidebar-hover-bg: #233d48;
+  --lte-sidebar-hover-color: #ffffff;
+  --lte-sidebar-menu-active-bg: #3d6878;
+  --lte-sidebar-menu-active-color: #ffffff;
+  --bs-primary: var(--qmah-cobalt);
+  --bs-primary-rgb: 138, 184, 200;
+  --bs-body-bg: var(--qmah-porcelain);
+  --bs-body-bg-rgb: 17, 26, 31;
+  --bs-body-color: var(--qmah-ink);
+  --bs-body-color-rgb: 238, 244, 246;
+  --bs-emphasis-color: var(--qmah-ink);
+  --bs-emphasis-color-rgb: 238, 244, 246;
+  --bs-secondary-color: var(--qmah-ink-soft);
+  --bs-secondary-color-rgb: 194, 210, 216;
+  --bs-secondary-bg: var(--qmah-surface-soft);
+  --bs-secondary-bg-rgb: 34, 58, 67;
+  --bs-tertiary-bg: #14232a;
+  --bs-tertiary-bg-rgb: 20, 35, 42;
+  --bs-border-color: var(--qmah-line);
+  --bs-border-color-translucent: rgba(60, 83, 93, 0.78);
+  --bs-link-color: var(--qmah-cobalt);
+  --bs-link-color-rgb: 138, 184, 200;
+  --bs-link-hover-color: #c3e0e8;
+  --bs-link-hover-color-rgb: 195, 224, 232;
+  --bs-focus-ring-color: var(--qmah-focus);
+  color-scheme: dark;
+}
+
+body.layout-fixed {
+  min-width: 320px;
+  background: var(--qmah-porcelain);
+  color: var(--qmah-ink);
+  font-family: var(--qmah-font-ui);
+}
+
+.app-header {
+  min-height: 4.25rem;
+  border-bottom: 1px solid var(--qmah-line);
+  background: var(--qmah-surface) !important;
+  box-shadow: none;
+}
+
+.app-header .nav-link {
+  color: var(--qmah-ink-soft);
+}
+
+.app-header .nav-link:hover,
+.app-header .nav-link:focus-visible {
+  color: var(--qmah-cobalt-deep);
+  background: var(--qmah-surface-soft);
+}
+
+.qmah-adminlte-brand {
+  display: inline-flex;
+  align-items: center;
+  width: 12rem;
+  padding: 0.55rem 0.8rem;
+}
+
+.qmah-adminlte-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.qmah-adminlte-brand .qmah-logo-light {
+  display: block !important;
+}
+
+.qmah-adminlte-brand .qmah-logo-dark {
+  display: none !important;
+}
+
+html[data-bs-theme="dark"] .qmah-adminlte-brand .qmah-logo-light {
+  display: none !important;
+}
+
+html[data-bs-theme="dark"] .qmah-adminlte-brand .qmah-logo-dark {
+  display: block !important;
+}
+
+.app-sidebar .qmah-adminlte-brand .qmah-logo-light,
+.app-sidebar .qmah-logo-light {
+  display: none !important;
+}
+
+.app-sidebar .qmah-adminlte-brand .qmah-logo-dark,
+.app-sidebar .qmah-logo-dark {
+  display: block !important;
+}
+
+.app-sidebar {
+  background: var(--lte-sidebar-bg) !important;
+  box-shadow: 0 0 0 1px rgba(19, 36, 44, 0.1);
+}
+
+.sidebar-brand {
+  min-height: 4.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--lte-sidebar-bg) !important;
+}
+
+.qmah-adminlte-sidebar-logo {
+  width: 12rem;
+  max-width: calc(100% - 1.5rem);
+  height: auto;
+}
+
+.app-sidebar .sidebar-menu {
+  --lte-sidebar-menu-active-bg: #3d687c;
+}
+
+.app-sidebar .nav-header {
+  color: #91a9b3;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+}
+
+.app-sidebar .nav-link {
+  margin: 0.15rem 0.65rem;
+  border-radius: 0.35rem;
+  color: var(--lte-sidebar-color);
+}
+
+.app-sidebar .nav-link:hover {
+  background: var(--lte-sidebar-hover-bg);
+  color: var(--lte-sidebar-hover-color);
+}
+
+.app-sidebar .nav-link.active {
+  background: var(--lte-sidebar-menu-active-bg);
+  color: var(--lte-sidebar-menu-active-color);
+  box-shadow: none;
+}
+
+.app-sidebar .nav-icon {
+  width: 1.4rem;
+  color: var(--qmah-celadon);
+  text-align: center;
+}
+
+.app-content-header {
+  padding: 1.5rem 1.5rem 0.8rem;
+}
+
+.app-content-header h1 {
+  color: var(--qmah-ink);
+  font-size: clamp(1.5rem, 1.25rem + 0.7vw, 2rem);
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+.app-content-header .breadcrumb {
+  color: var(--qmah-ink-faint);
+  font-size: 0.8rem;
+}
+
+.app-content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.app-content .container-fluid {
+  max-width: 1440px;
+  padding: 0;
+}
+
+.qmah-adminlte-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.qmah-adminlte-toolbar p {
+  margin: 0;
+  color: var(--qmah-ink-soft);
+  font-size: 0.9rem;
+}
+
+.qmah-adminlte-toolbar .btn-primary {
+  --bs-btn-bg: var(--qmah-cobalt);
+  --bs-btn-border-color: var(--qmah-cobalt);
+  --bs-btn-hover-bg: var(--qmah-cobalt-deep);
+  --bs-btn-hover-border-color: var(--qmah-cobalt-deep);
+}
+
+.qmah-adminlte-info {
+  min-height: 7rem;
+  border: 1px solid var(--qmah-line);
+  border-radius: var(--qmah-radius);
+  background: var(--qmah-surface);
+  box-shadow: none;
+}
+
+.qmah-adminlte-info .info-box-icon {
+  width: 3.25rem;
+  min-height: 3.25rem;
+  margin: 0.85rem;
+  border-radius: 0.35rem;
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-cobalt);
+  font-size: 1.25rem;
+}
+
+.qmah-adminlte-info .info-box-text,
+.qmah-adminlte-info .info-box-number {
+  color: var(--qmah-ink);
+}
+
+.qmah-adminlte-info .info-box-text {
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+.qmah-adminlte-info .info-box-number {
+  font-size: 1.65rem;
+  font-weight: 750;
+}
+
+.qmah-adminlte-card {
+  overflow: hidden;
+  height: 100%;
+  border: 1px solid var(--qmah-line);
+  border-radius: var(--qmah-radius);
+  background: var(--qmah-surface);
+  box-shadow: none;
+}
+
+.qmah-adminlte-card .card-header {
+  border-bottom: 1px solid var(--qmah-line-soft);
+  background: transparent;
+}
+
+.qmah-adminlte-card .card-title,
+.qmah-adminlte-card .card-body,
+.qmah-adminlte-card .card-footer {
+  color: var(--qmah-ink);
+}
+
+.qmah-adminlte-card .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.qmah-adminlte-card .card-footer {
+  border-top: 1px solid var(--qmah-line-soft);
+  background: transparent;
+}
+
+.qmah-adminlte-card .table {
+  margin: 0;
+  color: var(--qmah-ink);
+  font-size: 0.82rem;
+}
+
+.qmah-adminlte-card .table > :not(caption) > * > * {
+  padding: 0.7rem 0.9rem;
+  border-bottom-color: var(--qmah-line-soft);
+}
+
+.qmah-adminlte-card .table thead th {
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-ink-soft);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.qmah-adminlte-card .table tbody tr:hover {
+  background: color-mix(in srgb, var(--qmah-surface-soft) 62%, transparent);
+}
+
+.qmah-adminlte-chart {
+  position: relative;
+  min-height: 18rem;
+}
+
+.qmah-adminlte-chart canvas {
+  width: 100% !important;
+  height: 18rem !important;
+}
+
+.qmah-adminlte-status {
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.qmah-adminlte-status--success {
+  color: var(--qmah-success);
+}
+
+.qmah-adminlte-status--warning {
+  color: var(--qmah-warning);
+}
+
+.qmah-adminlte-status--danger {
+  color: var(--qmah-danger);
+}
+
+.qmah-adminlte-table-wrap {
+  overflow-x: auto;
+}
+
+.qmah-adminlte-table-wrap .table {
+  min-width: 840px;
+}
+
+.qmah-adminlte-footer {
+  padding: 1rem 1.5rem 1.5rem;
+  color: var(--qmah-ink-faint);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .app-content-header {
+    padding: 1.25rem 1rem 0.7rem;
+  }
+
+  .app-content {
+    padding: 0 1rem 1rem;
+  }
+
+  .qmah-adminlte-brand {
+    width: 9.5rem;
+  }
+
+  .qmah-adminlte-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .qmah-adminlte-toolbar .btn {
+    width: 100%;
+  }
+}

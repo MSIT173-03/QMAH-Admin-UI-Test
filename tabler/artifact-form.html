@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a2930">
+  <title>新增圖鑑條目｜清明鑑定屋後台</title>
+  <link rel="icon" href="../shared/brand/qmah-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/vendor/tabler.min.css">
+  <link rel="stylesheet" href="../shared/css/qmah-shared.css">
+  <link rel="stylesheet" href="assets/css/qmah-tabler.css">
+</head>
+<body>
+  <div class="page">
+    <aside class="navbar navbar-vertical navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu" aria-controls="sidebar-menu" aria-expanded="false" aria-label="開啟側邊導覽"><span class="navbar-toggler-icon"></span></button>
+        <a class="navbar-brand qmah-brand" href="index.html" aria-label="清明鑑定屋後台首頁"><img class="qmah-logo-light" src="../shared/brand/qmah-logo.svg" alt="清明鑑定屋 QMAH"><img class="qmah-logo-dark" src="../shared/brand/qmah-logo-dark.svg" alt="清明鑑定屋 QMAH"></a>
+        <div class="collapse navbar-collapse" id="sidebar-menu">
+          <ul class="navbar-nav pt-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html"><span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"></path></svg></span><span class="nav-link-title">總覽</span></a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="artifacts.html" data-qmah-system="catalog"><span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M5 7l1 12h12l1-12M9 11h6M3 4h18v3H3z"></path></svg></span><span class="nav-link-title">圖鑑管理</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="game.html" data-qmah-system="game"><span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10l3 3-2 7H6l-2-7 3-3zM8 7l2-3h4l2 3M8 13h8M10 16h4"></path></svg></span><span class="nav-link-title">遊戲管理</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="social.html" data-qmah-system="social"><span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v10H9l-4 4V5zM8 9h8M8 12h5"></path></svg></span><span class="nav-link-title">社群管理</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="store.html" data-qmah-system="store"><span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 11H6L5 8zM8 8a4 4 0 0 1 8 0M9 12h6"></path></svg></span><span class="nav-link-title">商城管理</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="users.html" data-qmah-system="user"><span class="nav-link-icon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1M9.5 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM17 11a3 3 0 0 0 0-6M17 15h1a3 3 0 0 1 3 3v2"></path></svg></span><span class="nav-link-title">會員管理</span></a></li>
+          </ul>
+          <div class="qmah-sidebar-footer mt-auto"><strong>典藏工作台</strong><span>圖鑑條目 256 件</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <header class="navbar navbar-expand-md d-print-none qmah-topbar"><div class="container-xl"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="開啟工具列"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbar-menu"><div class="navbar-nav flex-fill"><div class="nav-item flex-fill"><div class="input-icon"><span class="input-icon-addon"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></span><input class="form-control" type="search" placeholder="搜尋圖鑑、會員或訂單" aria-label="搜尋圖鑑、會員或訂單"></div></div></div><div class="navbar-nav flex-row order-md-last ms-md-3 align-items-center"><div class="nav-item me-2"><button type="button" class="qmah-theme-toggle" data-qmah-theme-toggle aria-pressed="false" aria-label="切換為深色模式"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg><span data-qmah-theme-label>深色</span></button></div><div class="nav-item dropdown"><a href="#" class="nav-link px-2" data-bs-toggle="dropdown" aria-label="開啟通知"><svg class="qmah-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"></path></svg><span class="badge bg-red text-red-fg badge-notification badge-pill">1</span></a><div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"><div class="dropdown-header">資料提醒</div><a class="dropdown-item" href="artifacts.html">汝窯 青瓷盤來源標示 CC BY 4.0</a><a class="dropdown-item" href="artifacts.html">題庫已啟用 256 件</a><div class="dropdown-divider"></div><a class="dropdown-item text-secondary" href="#">查看全部提醒</a></div></div><div class="nav-item dropdown ms-2"><a href="#" class="nav-link d-flex align-items-center lh-1" data-bs-toggle="dropdown" aria-label="開啟帳號選單"><span class="avatar avatar-sm" style="background:#e6eff3;color:#2d556b">林</span><div class="d-none d-xl-block ps-2"><div>林編輯</div><div class="mt-1 small text-secondary">內容編輯</div></div><svg class="qmah-icon ms-2" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a><div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow"><a class="dropdown-item" href="#">帳號設定</a><a class="dropdown-item" href="#">操作紀錄</a><div class="dropdown-divider"></div><a class="dropdown-item" href="#">登出</a></div></div></div></div></div></header>
+
+    <div class="page-wrapper">
+      <div class="page-header d-print-none"><div class="container-xl"><div class="row align-items-center"><div class="col"><div class="page-pretitle">典藏資料 / 圖鑑管理</div><h1 class="page-title">新增圖鑑條目</h1><p class="mb-0 text-secondary">建立圖鑑條目、來源授權與題庫設定。</p></div><div class="col-auto ms-auto"><a href="artifacts.html" class="btn btn-outline-secondary">返回圖鑑列表</a></div></div></div></div>
+      <div class="page-body"><div class="container-xl">
+        <form data-qmah-validation data-qmah-return="artifacts.html" novalidate>
+          <div class="row row-cards">
+            <div class="col-lg-8">
+              <section class="card">
+                <div class="card-header"><div><h2 class="card-title mb-1">圖鑑條目</h2><p class="card-subtitle">標示 * 的欄位為必填。</p></div></div>
+                <div class="card-body">
+                  <div class="qmah-validation-summary p-3" data-qmah-validation-summary role="alert"></div>
+                  <ul class="nav nav-tabs mb-4" role="tablist">
+                    <li class="nav-item" role="presentation"><a href="#basic-info" class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true">基本資料</a></li>
+                    <li class="nav-item" role="presentation"><a href="#source-info" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">來源與授權</a></li>
+                    <li class="nav-item" role="presentation"><a href="#question-info" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">題庫設定</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active show" id="basic-info" role="tabpanel">
+                      <div class="row row-cards">
+                        <div class="col-md-8"><div class="mb-3"><label class="form-label required" for="artifact-name">文物名稱</label><input id="artifact-name" name="name" class="form-control" required value="銅胎畫琺瑯西洋母子圖鼻煙壺"><div class="invalid-feedback">請輸入文物名稱。</div></div></div>
+                        <div class="col-md-4"><div class="mb-3"><label class="form-label required" for="artifact-ref">館藏編號</label><input id="artifact-ref" name="artifactRef" class="form-control" required value="故琺000873N000000000"><div class="invalid-feedback">請輸入館藏編號。</div></div></div>
+                        <div class="col-md-6"><div class="mb-3"><label class="form-label required" for="artifact-category">分類</label><select id="artifact-category" name="category" class="form-select" required><option value="">請選擇分類</option><option>銅器</option><option>陶瓷</option><option>玉器</option><option>繪畫</option><option selected>琺瑯器</option><option>漆器</option><option>錢幣</option><option>雕刻</option></select><div class="invalid-feedback">請選擇分類。</div></div></div>
+                        <div class="col-md-6"><div class="mb-3"><label class="form-label required" for="artifact-era-bucket">年代桶</label><select id="artifact-era-bucket" name="eraBucket" class="form-select" required><option value="">請選擇年代桶</option><option>周</option><option>戰國</option><option>宋</option><option>明</option><option selected>清</option><option>漢</option><option>唐</option></select><div class="invalid-feedback">請選擇年代桶。</div></div></div>
+                        <div class="col-md-6"><div class="mb-3"><label class="form-label" for="artifact-era-original">原始年代文字</label><input id="artifact-era-original" name="eraTextOriginal" class="form-control" value="清 乾隆"><span class="qmah-field-note">保留來源所載的原始年代文字。</span></div></div>
+                        <div class="col-md-6"><div class="mb-3"><label class="form-label" for="artifact-creator">作者／製作者顯示</label><input id="artifact-creator" name="creatorDisplay" class="form-control" placeholder="未提供"><span class="qmah-field-note">來源未記載作者或製作者時可留空。</span></div></div>
+                        <div class="col-12"><div class="mb-3"><label class="form-label" for="artifact-description">文物說明</label><textarea id="artifact-description" name="description" class="form-control" rows="5">扁瓶，雙面開光繪母子圖，側以橄欖綠為地彩繪花草紋。底有楷書「乾隆年製」黑款，銅雕花蓋及匙。</textarea><span class="qmah-field-note">保留館藏資料的原始說明。</span></div></div>
+                        <div class="col-12"><div class="mb-3"><label class="form-label" for="artifact-size">尺寸文字</label><input id="artifact-size" name="sizeText" class="form-control" value="長 5.5 公分、寬 3.8 公分、高 2.4 公分；木座長 5.5 公分、寬 3.8 公分、高 0.8 公分、連座高 2.5 公分"><span class="qmah-field-note">可填寫原始尺寸描述。</span></div></div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="source-info" role="tabpanel">
+                      <div class="row row-cards">
+                        <div class="col-12"><div class="mb-3"><label class="form-label required" for="primary-image-path">主要影像路徑</label><input id="primary-image-path" name="primaryImagePath" class="form-control" required readonly value="/media/catalog/enamel/故琺000873N000000000/display.jpg"><span class="qmah-field-note">主要影像儲存位置。</span></div></div>
+                        <div class="col-12"><div class="mb-3"><label class="form-label" for="thumbnail-path">縮圖路徑</label><input id="thumbnail-path" name="thumbnailPath" class="form-control" readonly value="/media/catalog/enamel/故琺000873N000000000/thumbnail.jpg"><span class="qmah-field-note">供列表與搜尋結果使用。</span></div></div>
+                        <div class="col-12"><div class="mb-3"><label class="form-label" for="artifact-image">替換主要影像</label><input id="artifact-image" class="form-control" type="file" accept="image/jpeg,image/png" data-qmah-file-input data-qmah-file-label="#artifact-file-label"><span id="artifact-file-label" class="qmah-field-note">尚未選擇檔案</span></div></div>
+                        <div class="col-md-7"><div class="mb-3"><label class="form-label required" for="artifact-source">來源網址</label><input id="artifact-source" name="sourceUrl" class="form-control" type="url" required value="https://digitalarchive.npm.gov.tw/Collection/Detail/61855?dep=U"><div class="invalid-feedback">請輸入來源網址。</div></div></div>
+                        <div class="col-md-5"><div class="mb-3"><label class="form-label required" for="license-code">授權代碼</label><input id="license-code" name="licenseCode" class="form-control" required value="CC-BY-4.0"><div class="invalid-feedback">請輸入授權代碼。</div></div></div>
+                        <div class="col-12"><div class="mb-3"><label class="form-label" for="attribution-text">姓名標示</label><textarea id="attribution-text" name="attributionText" class="form-control" rows="4">銅胎畫琺瑯西洋母子圖鼻煙壺 國立故宮博物院，臺北，CC BY 4.0 @ www.npm.gov.tw</textarea><span class="qmah-field-note">請保留完整姓名標示。</span></div></div>
+                      </div>
+                    </div>
+                    <div class="tab-pane" id="question-info" role="tabpanel">
+                      <div class="row row-cards">
+                        <div class="col-md-6"><div class="mb-3"><label class="form-label" for="question-template">題目模板代碼</label><input id="question-template" name="questionTemplateCode" class="form-control" value="GENERAL"><span class="qmah-field-note">選擇題目類型。</span></div></div>
+                        <div class="col-md-6"><div class="mb-3"><label class="form-label" for="question-difficulty">難度</label><select id="question-difficulty" name="difficulty" class="form-select"><option selected>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><span class="qmah-field-note">難度範圍為 1–5。</span></div></div>
+                        <div class="col-md-6"><div class="mb-3"><label class="form-check form-switch"><input class="form-check-input" id="artifact-active" name="isActive" type="checkbox" checked><span class="form-check-label">啟用文物</span></label></div></div>
+                        <div class="col-md-6"><div class="mb-3"><label class="form-check form-switch"><input class="form-check-input" id="question-enabled" name="questionEnabled" type="checkbox" checked><span class="form-check-label">啟用題庫設定</span></label><span class="qmah-field-note">控制這件文物是否加入題庫。</span></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer d-flex align-items-center"><p class="qmah-form-status" data-qmah-form-status role="status"></p><div class="ms-auto qmah-actions"><a href="artifacts.html" class="btn btn-link">取消</a><button class="btn btn-outline-secondary" type="button" data-bs-toggle="modal" data-bs-target="#preview-modal">預覽</button><button class="btn btn-primary" type="submit">儲存文物</button></div></div>
+              </section>
+            </div>
+            <div class="col-lg-4">
+              <section class="card mb-3"><div class="card-header"><h2 class="card-title mb-0">主要影像</h2></div><div class="card-body"><div class="qmah-form-preview mb-3"><img class="qmah-form-image" src="../shared/media/catalog/enamel/故琺000873N000000000/thumbnail.jpg" alt="銅胎畫琺瑯西洋母子圖鼻煙壺縮圖"><div class="qmah-form-preview__caption"><strong class="qmah-artifact-name">銅胎畫琺瑯西洋母子圖鼻煙壺</strong><span class="qmah-artifact-meta">故琺000873N000000000</span></div></div><p class="qmah-field-note mb-0">顯示目前保存的主要影像。</p></div></section>
+              <section class="card"><div class="card-header"><h2 class="card-title mb-0">遊戲題庫關聯</h2></div><div class="card-body"><dl class="row mb-0"><dt class="col-7 text-secondary">模板代碼</dt><dd class="col-5 text-end">GENERAL</dd><dt class="col-7 text-secondary">難度</dt><dd class="col-5 text-end">1</dd><dt class="col-7 text-secondary">文物啟用</dt><dd class="col-5 text-end">是</dd><dt class="col-7 text-secondary">題庫啟用</dt><dd class="col-5 text-end">是</dd></dl></div></section>
+            </div>
+          </div>
+        </form>
+      </div></div>
+      <footer class="footer footer-transparent d-print-none"><div class="container-xl"><div class="row text-center"><div class="col-12">清明鑑定屋 QMAH · 內容管理後台</div></div></div></footer>
+    </div>
+  </div>
+
+  <div class="modal modal-blur fade" id="preview-modal" tabindex="-1" role="dialog" aria-labelledby="preview-modal-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h2 class="modal-title" id="preview-modal-title">文物預覽</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button></div><div class="modal-body"><div class="d-flex align-items-center mb-3"><img class="qmah-artifact-thumb me-3" src="../shared/media/catalog/enamel/故琺000873N000000000/thumbnail.jpg" alt="銅胎畫琺瑯西洋母子圖鼻煙壺縮圖"><div><strong class="qmah-artifact-name">銅胎畫琺瑯西洋母子圖鼻煙壺</strong><span class="qmah-artifact-meta">清 乾隆 · 琺瑯器</span></div></div><p class="mb-0 text-secondary">扁瓶，雙面開光繪母子圖，側以橄欖綠為地彩繪花草紋。底有楷書「乾隆年製」黑款，銅雕花蓋及匙。</p></div><div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">返回編輯</button></div></div></div></div>
+  <script src="assets/vendor/tabler.min.js"></script>
+  <script src="../shared/js/qmah-demo.js"></script>
+</body>
+</html>

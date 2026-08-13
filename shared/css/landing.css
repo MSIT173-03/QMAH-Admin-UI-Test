@@ -1,0 +1,147 @@
+body.qmah-landing {
+  min-height: 100vh;
+  background: var(--qmah-porcelain);
+}
+
+.qmah-landing__shell {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem;
+}
+
+.qmah-landing__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.qmah-landing__header .qmah-brand img {
+  width: 168px;
+}
+
+.qmah-landing__main {
+  width: 100%;
+}
+
+.qmah-landing__title {
+  max-width: 11ch;
+  margin: 0;
+  color: var(--qmah-ink);
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-weight: 720;
+  letter-spacing: -0.06em;
+  line-height: 1.03;
+}
+
+.qmah-landing__subtitle {
+  margin: 1rem 0 0;
+  color: var(--qmah-ink-soft);
+  font-size: 1rem;
+}
+
+.qmah-landing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.qmah-landing__card {
+  display: flex;
+  min-height: 15rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid var(--qmah-line);
+  border-radius: var(--qmah-radius-lg);
+  background: var(--qmah-surface);
+  box-shadow: var(--qmah-shadow);
+}
+
+.qmah-landing__card:nth-child(2) {
+  background: var(--qmah-surface-warm);
+}
+
+.qmah-landing__card h2 {
+  margin: 0;
+  color: var(--qmah-ink);
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.qmah-landing__meta {
+  margin: 0.45rem 0 0;
+  color: var(--qmah-ink-faint);
+  font-size: 0.82rem;
+}
+
+.qmah-landing__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+}
+
+.qmah-landing__link {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--qmah-cobalt);
+  border-radius: var(--qmah-radius-sm);
+  background: var(--qmah-cobalt);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.qmah-landing__link:hover,
+.qmah-landing__link:focus-visible {
+  border-color: var(--qmah-cobalt-deep);
+  background: var(--qmah-cobalt-deep);
+  color: #fff;
+}
+
+.qmah-landing__link--quiet {
+  border-color: var(--qmah-line);
+  background: transparent;
+  color: var(--qmah-ink-soft);
+}
+
+.qmah-landing__link--quiet:hover,
+.qmah-landing__link--quiet:focus-visible {
+  border-color: var(--qmah-cobalt);
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-cobalt-deep);
+}
+
+.qmah-landing__footer {
+  margin-top: 3rem;
+  color: var(--qmah-ink-faint);
+  font-size: 0.78rem;
+}
+
+@media (max-width: 880px) {
+  .qmah-landing__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .qmah-landing__shell {
+    padding-top: 1.5rem;
+  }
+
+  .qmah-landing__header {
+    margin-bottom: 3rem;
+  }
+
+  .qmah-landing__grid {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+}

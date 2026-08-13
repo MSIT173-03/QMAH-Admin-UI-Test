@@ -1,0 +1,6 @@
+_upstream/
+.playwright-cli/
+output/
+node_modules/
+*.map
+*.log

@@ -1,0 +1,641 @@
+body.app {
+  --ca-primary: var(--qmah-cobalt);
+  --ca-primary-rgb: 63, 111, 134;
+  --ca-body-bg: var(--qmah-porcelain);
+  --ca-card-bg: var(--qmah-surface);
+  --ca-sidebar-bg: var(--qmah-ink);
+  --ca-topbar-bg: var(--qmah-surface);
+  --ca-border: var(--qmah-line);
+  --m-bg: var(--qmah-porcelain);
+  --m-surface: var(--qmah-surface);
+  --m-surface-2: var(--qmah-surface-soft);
+  --m-sidebar: var(--qmah-ink);
+  --m-sidebar-soft: #203944;
+  --m-border: var(--qmah-line);
+  --m-border-soft: var(--qmah-line-soft);
+  --m-divider: var(--qmah-line-soft);
+  --m-text: var(--qmah-ink);
+  --m-text-muted: var(--qmah-ink-soft);
+  --m-text-faint: var(--qmah-ink-faint);
+  --m-text-on-dark: #f7fbfc;
+  --m-accent: var(--qmah-cobalt);
+  --m-accent-rgb: 63, 111, 134;
+  --m-accent-hover: var(--qmah-cobalt-deep);
+  --m-accent-soft: var(--qmah-surface-soft);
+  --m-c1: var(--qmah-cobalt);
+  --m-c2: var(--qmah-celadon);
+  --m-c3: var(--qmah-cinnabar);
+  --m-c4: var(--qmah-bronze);
+  --m-radius-sm: var(--qmah-radius-sm);
+  --m-radius: var(--qmah-radius);
+  --m-radius-lg: var(--qmah-radius-lg);
+  font-family: var(--qmah-font-ui);
+  color: var(--qmah-ink);
+}
+
+body.app.theme-dark {
+  --qmah-porcelain: #111a20;
+  --qmah-surface: #1a2930;
+  --qmah-surface-soft: #223640;
+  --qmah-surface-warm: #2d2c29;
+  --qmah-ink: #f0f5f7;
+  --qmah-ink-soft: #c0d0d7;
+  --qmah-ink-faint: #91a9b3;
+  --qmah-line: #354a55;
+  --qmah-line-soft: #293e47;
+  --qmah-cobalt: #88b6c7;
+  --qmah-cobalt-deep: #b3d1dc;
+  --qmah-celadon: #a8c3cb;
+  --qmah-cinnabar: #df8878;
+  --qmah-bronze: #d1b27b;
+  --qmah-info: #8ebed2;
+  --qmah-success: #8fc6a9;
+  --qmah-warning: #e0b370;
+  --qmah-danger: #df8878;
+  --ca-body-bg: #111a20;
+  --ca-card-bg: #1a2930;
+  --ca-sidebar-bg: #14252c;
+  --ca-topbar-bg: #1a2930;
+  --ca-border: #354a55;
+  --m-bg: #111a20;
+  --m-surface: #1a2930;
+  --m-surface-2: #223640;
+  --m-sidebar: #14252c;
+  --m-sidebar-soft: #203944;
+  --m-border: #354a55;
+  --m-border-soft: #293e47;
+  --m-divider: #293e47;
+  --m-text: #f0f5f7;
+  --m-text-muted: #c0d0d7;
+  --m-text-faint: #91a9b3;
+  --m-text-on-dark: #f7fbfc;
+  --m-accent: #88b6c7;
+  --m-accent-rgb: 136, 182, 199;
+  --m-accent-hover: #b3d1dc;
+  --m-accent-soft: #223640;
+}
+
+body.app .page-wrapper,
+body.app .main-content {
+  background: var(--qmah-porcelain);
+}
+
+body.app .menu-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  min-height: 100vh;
+  background: #fbfcfa;
+  border-right: 1px solid var(--qmah-line);
+}
+
+body.app .menu-sidebar .logo {
+  min-height: 4.75rem;
+  padding: 1.05rem 1.2rem;
+  border-bottom: 1px solid var(--qmah-line-soft);
+  background: #fbfcfa;
+}
+
+body.app .menu-sidebar .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+body.app .menu-sidebar .logo .qmah-cool-logo-full {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+body.app .menu-sidebar .logo .qmah-logo-light {
+  display: block !important;
+}
+
+body.app .menu-sidebar .logo .qmah-logo-dark {
+  display: none !important;
+}
+
+body.app.theme-dark .menu-sidebar .logo .qmah-logo-light {
+  display: none !important;
+}
+
+body.app.theme-dark .menu-sidebar .logo .qmah-logo-dark {
+  display: block !important;
+}
+
+body.app .qmah-cool-logo-mark,
+body.app .menu-sidebar .logo-mark,
+body.app .menu-sidebar .logo-text {
+  display: none;
+}
+
+body.app.sidebar-collapsed .qmah-cool-logo-full {
+  display: none;
+}
+
+body.app.sidebar-collapsed .qmah-cool-logo-mark {
+  display: block;
+  width: 2.15rem;
+  height: 2.15rem;
+}
+
+body.app .qmah-mobile-logo img {
+  display: block;
+  width: min(170px, 46vw);
+  max-width: 100%;
+  height: auto;
+}
+
+body.app .qmah-topbar-brand {
+  display: none;
+  align-items: center;
+  min-width: 0;
+  text-decoration: none;
+}
+
+body.app .qmah-topbar-brand img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+body.app .qmah-account-mark {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-cobalt-deep);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+body.app .qmah-account-mark--large {
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1rem;
+}
+
+body.app .qmah-account-role {
+  display: block;
+  margin-top: 0.1rem;
+  color: var(--qmah-ink-faint);
+  font-size: 0.72rem;
+}
+
+body.app .menu-sidebar .logo-mark {
+  display: grid;
+  width: 2.15rem;
+  height: 2.15rem;
+  place-items: center;
+  border: 1px solid rgba(183, 201, 193, 0.55);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--qmah-celadon);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+body.app .menu-sidebar .logo-text {
+  color: #f0f5f7;
+  font-family: var(--qmah-font-ui);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+body.app .navbar-sidebar .navbar__list > li > a,
+body.app .navbar-mobile__list > li > a {
+  min-height: 2.55rem;
+  margin: 0.18rem 0.7rem;
+  padding: 0.58rem 0.72rem;
+  border-radius: var(--qmah-radius-sm);
+  color: var(--qmah-ink-soft);
+  font-size: 0.86rem;
+}
+
+body.app .navbar-sidebar .navbar__list > li > a:hover,
+body.app .navbar-sidebar .navbar__list > li.active > a,
+body.app .navbar-mobile__list > li > a:hover {
+  background: #e7f0f4;
+  color: var(--qmah-cobalt-deep);
+}
+
+body.app .navbar-sidebar .navbar__list > li.active > a {
+  box-shadow: inset 3px 0 0 var(--qmah-celadon);
+}
+
+body.app .navbar-sidebar .navbar__list > li > a i,
+body.app .navbar-mobile__list > li > a i {
+  color: var(--qmah-cobalt);
+}
+
+body.app .navbar-sidebar .navbar__sub-list {
+  margin-left: 0.7rem;
+}
+
+body.app .navbar-sidebar .navbar__sub-list a {
+  color: #9eb8b0;
+}
+
+body.app .navbar-sidebar .navbar__sub-list li.active a {
+  color: #f0f5f7;
+  font-weight: 650;
+}
+
+body.app .header-desktop {
+  background: var(--qmah-surface);
+  border-bottom: 1px solid var(--qmah-line);
+}
+
+body.app .section__content--p30 {
+  padding: 1.5rem 1.8rem;
+}
+
+body.app .main-content > .section__content,
+body.app .main-content > .section__content > .container-fluid {
+  width: 100%;
+  max-width: none;
+}
+
+body.app .header-wrap {
+  min-height: 3rem;
+}
+
+body.app .form-header .au-input {
+  border-color: var(--qmah-line);
+  border-radius: var(--qmah-radius-sm);
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-ink);
+}
+
+body.app .form-header .au-input:focus {
+  border-color: var(--qmah-cobalt);
+  box-shadow: 0 0 0 0.2rem var(--qmah-focus);
+}
+
+body.app .noti__item,
+body.app .account-item {
+  color: var(--qmah-ink-soft);
+}
+
+body.app .noti__item:hover,
+body.app .account-item:hover {
+  color: var(--qmah-cobalt-deep);
+}
+
+body.app .page-header h1,
+body.app .qmah-cool-title {
+  margin: 0;
+  color: var(--qmah-ink);
+  font-size: 1.75rem;
+  font-weight: 720;
+  letter-spacing: -0.03em;
+}
+
+body.app .page-header .subtitle,
+body.app .qmah-cool-subtitle {
+  max-width: 66ch;
+  margin: 0.35rem 0 0;
+  color: var(--qmah-ink-soft);
+  font-size: 0.92rem;
+}
+
+body.app .page-header {
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+body.app .m-card,
+body.app .stat-card,
+body.app .data-card {
+  border: 1px solid var(--qmah-line);
+  border-radius: var(--qmah-radius);
+  background: var(--qmah-surface);
+  box-shadow: var(--qmah-shadow);
+}
+
+body.app .m-card__header,
+body.app .m-card__footer,
+body.app .data-card__header,
+body.app .data-card__footer {
+  border-color: var(--qmah-line-soft);
+  background: transparent;
+}
+
+body.app .m-card__title,
+body.app .data-card__title {
+  color: var(--qmah-ink);
+  font-weight: 700;
+}
+
+body.app .m-btn,
+body.app .date-chip {
+  min-height: 2.4rem;
+  border-radius: var(--qmah-radius-sm);
+  font-family: var(--qmah-font-ui);
+  font-weight: 650;
+}
+
+body.app .m-btn--primary {
+  border-color: var(--qmah-cobalt);
+  background: var(--qmah-cobalt);
+  color: #fff;
+}
+
+body.app .m-btn--primary:hover,
+body.app .m-btn--primary:focus-visible {
+  border-color: var(--qmah-cobalt-deep);
+  background: var(--qmah-cobalt-deep);
+  color: #fff;
+}
+
+body.app .m-btn--ghost,
+body.app .date-chip {
+  border-color: var(--qmah-line);
+  background: transparent;
+  color: var(--qmah-ink-soft);
+}
+
+body.app .m-btn--ghost:hover,
+body.app .date-chip:hover {
+  border-color: var(--qmah-cobalt);
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-cobalt-deep);
+}
+
+body.app .qmah-cool-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+body.app .qmah-cool-kpi {
+  min-height: 8.7rem;
+  padding: 1.1rem 1.2rem;
+}
+
+body.app .qmah-cool-kpi__label {
+  margin: 0;
+  color: var(--qmah-ink-soft);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+body.app .qmah-cool-kpi__value {
+  margin: 0.45rem 0 0;
+  color: var(--qmah-ink);
+  font-size: 1.75rem;
+  font-weight: 720;
+  letter-spacing: -0.035em;
+}
+
+body.app .qmah-cool-kpi__rule {
+  width: 2.1rem;
+  height: 2px;
+  margin-top: 0.75rem;
+  background: var(--qmah-cobalt);
+}
+
+body.app .qmah-cool-kpi--warm .qmah-cool-kpi__rule,
+body.app .qmah-cool-kpi--bronze .qmah-cool-kpi__rule,
+body.app .qmah-cool-kpi--info .qmah-cool-kpi__rule { background: var(--qmah-cobalt); }
+
+body.app .qmah-cool-kpi__note {
+  margin: 0.55rem 0 0;
+  color: var(--qmah-ink-faint);
+  font-size: 0.78rem;
+}
+
+body.app .qmah-cool-kpi__note--up {
+  color: var(--qmah-success);
+}
+
+body.app .qmah-cool-kpi__note--down {
+  color: var(--qmah-danger);
+}
+
+body.app .qmah-form-preview__caption {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 0.75rem;
+  text-align: center;
+}
+
+body.app .qmah-form-preview__caption .qmah-artifact-name {
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+body.app .qmah-form-preview__caption .qmah-artifact-meta {
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+}
+
+body.app .table,
+body.app .data-table {
+  color: var(--qmah-ink);
+}
+
+body.app .table thead th,
+body.app .data-table thead th {
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-ink-soft);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body.app .table td,
+body.app .table th,
+body.app .data-table td,
+body.app .data-table th {
+  border-color: var(--qmah-line-soft);
+  vertical-align: middle;
+}
+
+body.app .table-responsive > :where(.table, .data-table) {
+  min-width: 52rem;
+}
+
+body.app .table tbody tr:hover,
+body.app .data-table tbody tr:hover {
+  background: rgba(183, 201, 193, 0.12);
+}
+
+body.app .form-control,
+body.app .form-select,
+body.app .au-input {
+  min-height: 2.45rem;
+  border-color: var(--qmah-line);
+  border-radius: var(--qmah-radius-sm);
+  background: var(--qmah-surface);
+  color: var(--qmah-ink);
+}
+
+body.app textarea.form-control {
+  min-height: 8rem;
+}
+
+body.app .form-control::placeholder {
+  color: var(--qmah-ink-faint);
+}
+
+body.app .form-control:focus,
+body.app .form-select:focus,
+body.app .au-input:focus {
+  border-color: var(--qmah-cobalt);
+  box-shadow: 0 0 0 0.2rem var(--qmah-focus);
+}
+
+body.app .form-label {
+  color: var(--qmah-ink-soft);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+body.app .dropdown-menu,
+body.app .mess-dropdown,
+body.app .email-dropdown,
+body.app .notifi-dropdown,
+body.app .account-dropdown {
+  border: 1px solid var(--qmah-line);
+  border-radius: var(--qmah-radius);
+  background: var(--qmah-surface);
+  box-shadow: 0 8px 24px rgba(22, 45, 41, 0.12);
+}
+
+body.app .copyright,
+body.app .copyright a {
+  color: var(--qmah-ink-faint);
+}
+
+body.app .copyright a:hover {
+  color: var(--qmah-cobalt-deep);
+}
+
+body.app.theme-dark .hamburger-inner,
+body.app.theme-dark .hamburger-inner::before,
+body.app.theme-dark .hamburger-inner::after {
+  background-color: #f0f5f7;
+}
+
+body.app.theme-dark .menu-sidebar {
+  background: #14252c;
+  border-color: #354a55;
+}
+
+body.app.theme-dark .menu-sidebar .logo {
+  border-color: #354a55;
+  background: #14252c;
+}
+
+body.app.theme-dark .navbar-sidebar .navbar__list > li > a,
+body.app.theme-dark .navbar-mobile__list > li > a {
+  color: #c0d0d7;
+}
+
+body.app.theme-dark .navbar-sidebar .navbar__list > li.active > a,
+body.app.theme-dark .navbar-sidebar .navbar__list > li > a:hover {
+  background: rgba(136, 182, 199, 0.18);
+  color: #f0f5f7;
+}
+
+body.app .theme-switcher {
+  display: none !important;
+}
+
+@media (max-width: 1100px) {
+  body.app .qmah-cool-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991.98px) {
+  body.app .menu-sidebar {
+    top: 0;
+    bottom: 0;
+    min-height: 100dvh;
+  }
+
+  body.app .section__content--p30 {
+    padding: 1.15rem 1rem;
+  }
+
+  body.app .qmah-topbar-brand {
+    display: flex;
+    grid-column: 2 !important;
+    justify-self: start !important;
+    width: min(170px, 46vw);
+  }
+}
+
+@media (max-width: 560px) {
+  body.app .qmah-cool-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.app .page-header__actions {
+    width: 100%;
+  }
+
+  body.app .qmah-theme-toggle {
+    flex: 0 0 2.75rem;
+    width: 2.75rem;
+    padding-inline: 0.5rem;
+  }
+
+  body.app .qmah-theme-toggle span {
+    display: none;
+  }
+}
+
+body.app.theme-dark .header-desktop {
+  background: var(--qmah-surface) !important;
+  border-bottom-color: var(--qmah-line) !important;
+  color: var(--qmah-ink);
+}
+
+body.app.theme-dark .header-desktop .sidebar-toggle,
+body.app.theme-dark .header-desktop .noti__item,
+body.app.theme-dark .header-desktop .form-header__icon {
+  color: var(--qmah-ink-soft);
+}
+
+body.app.theme-dark .header-desktop .account-item > .content > a {
+  color: var(--qmah-ink) !important;
+}
+
+body.app.theme-dark .header-desktop .account-item > .content > span {
+  color: var(--qmah-ink-soft) !important;
+}
+
+body.app.theme-dark .header-desktop .qmah-theme-toggle {
+  background: var(--qmah-surface-soft);
+  color: var(--qmah-ink);
+}
+
+body.app.theme-dark .header-desktop .notifi-dropdown,
+body.app.theme-dark .header-desktop .account-dropdown {
+  border-color: var(--qmah-line);
+  background: var(--qmah-surface);
+  color: var(--qmah-ink);
+}
+
+body.app .m-card__footer a,
+body.app .notifi__footer a {
+  color: var(--qmah-cobalt);
+}
+
+body.app .m-card__footer a:hover,
+body.app .notifi__footer a:hover {
+  color: var(--qmah-cobalt-deep);
+}
